@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+}
+header{
+    height: 100x;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-color: #8496DD;
+}
+header h1{
+    margin-bottom: 10px;
+}
+main{
+    height: calc(100% - 130px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-section{
+    padding: 10px;
+}
+.main-section .content{
+    display: flex;
+    flex-direction: column;
+}
+input,button,.display{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    margin-bottom: 8px;
+}
+#error-msg{
+    text-align: center;
+    color: rgb(194, 72, 72);
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.err-style{
+    animation-name: err;
+    animation-duration:.3s;
+    animation-timing-function: ease;
+
+}
+@keyframes err {
+    25%{
+        transform: translateX(-15px);
+    }
+    50%{
+        transform: translateX(15px);
+        
+    }
+    75%{
+        transform: translateX(-15px);
+        
+    }
+    100%{
+        
+        transform: translateX(15px);
+    }
+    
+}
+input{
+    background-color: #DFDAF4;
+    color: rgb(32, 32, 32);
+    font-family: inherit;
+}
+button{
+    background-color: #2B56D1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: inherit
+}
+.display{
+    background-color: white;
+    color: #2B56D1;
+    border: 1px solid #2B56D1;
+    display: none;
+    place-items: center;
+    font-family: inherit;
+}
